@@ -34,8 +34,8 @@ function JackpotClassic() {
     return <main className="jackpot">
         <div className="infoPlay">
             <div className="infoPlay-Info">
-                <span>Игра: #0</span>
-                <span>Банк: 0 руб.</span>
+                <span><span className="orange">ИГРА</span> <span className="blue">#</span> 0</span>
+                <span><span className="orange">БАНК</span> <span className="blue">:</span> 0 руб</span>
             </div>
             <div className="infoPlay-rull">
                 <div>
@@ -61,6 +61,62 @@ function JackpotClassic() {
                 <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
                 <span>10%</span>
             </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
+            <div>
+                <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
+                <span>10%</span>
+            </div>
         </div>
         <div>
             <div className="betsUser">
@@ -68,21 +124,79 @@ function JackpotClassic() {
                     <div className="betsUser_moreInfo" >
                         <img src="https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1"></img>
                         <div>
-                            <span>Ник</span>
-                            <span>внес 0 предметов</span>
-                            <span>10.00руб</span>
+                            <span className="orange">Ник</span>
+                            <span className="blue">внес</span>
+                            <span className="orange">0</span>
+                            <span className="blue">предметов</span>
+                            <span className="orange">10.00руб</span>
                         </div>
                     </div>
-                    <div>
-                        Билеты от:
-                        <span>0</span>
-                        до
-                        <span>100</span>
+                    <div className="tikets">
+                        Билеты от: &nbsp;
+                        <span className="orange"> 0</span>&nbsp;
+                        до &nbsp;
+                        <span className="orange"> 100</span>
                     </div>
                 </div>
                 <div className="betsUser_bet">
                     <div>
-                        <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
+                        <span>9.83</span>
+                    </div>
+                    <div>
+                        <img title="fg" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRfSV7cTur_h56KHE59IjtSpaqsOQZux_yGIGkXut_kw4LfzvGiZr-Dxz8CscN02O_Epo2i2QTir0trZm_3LY7EcBh-Pw-wldGgpA/100x100f"></img>
                         <span>9.83</span>
                     </div>
 
