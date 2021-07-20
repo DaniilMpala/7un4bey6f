@@ -27,7 +27,9 @@ function Ref() {
             <label className="ref-item__title">Реф. код</label>
             <div className="ref-item__body ref-code">
                 <input className="main-input"/>
-                <button className="ref__btn main-btn">Изменить</button>
+                <button className="ref__btn main-btn">
+                    <img src="img/edit_icon.svg" alt="edit" />
+                </button>
                 <button className="ref__btn main-btn">Скопировать</button>
             </div>
         </div>

@@ -27,11 +27,13 @@
     }
 
     .ref-code {
-        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-template: 1fr/ 6fr 1fr 1fr;
 
-        & input {
-            grid-column: span 2;
-        }
+       .ref__btn {
+           & img {
+               height: 30px;
+           }
+       } 
     }
 
     .main-item {
