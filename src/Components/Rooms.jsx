@@ -46,6 +46,8 @@ function Rooms() {
 
     return <div class="rooms">
         <div className="rooms__grid">
+            <img class="rooms__game-icon" src="img/ttf.svg"/>
+            <img class="rooms__game-icon" src="img/rust_icon.svg"/>
             
             {roomsElements}
         </div>

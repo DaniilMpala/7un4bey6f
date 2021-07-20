@@ -25,9 +25,24 @@ function Ref() {
         </div>
         <div className="ref__item ref-item">
             <label className="ref-item__title">Реф. код</label>
-            <div className="ref-item__body">
+            <div className="ref-item__body ref-code">
                 <input className="main-input"/>
+                <button className="ref__btn main-btn">Изменить</button>
                 <button className="ref__btn main-btn">Скопировать</button>
+            </div>
+        </div>
+        <div className="table">
+            <div className="head">
+                <span>Ник в стиме</span>
+                <span>Ставок</span>
+                <span>Вы заработали</span>
+            </div>
+            <div className="games-history">
+                <div className="panel" >
+                    <span>Ник Ник</span>
+                    <span>1</span>
+                    <span className="danger">1</span>
+                </div>
             </div>
         </div>
     </div>
