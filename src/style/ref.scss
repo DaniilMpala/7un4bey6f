@@ -1,0 +1,26 @@
+@import "color.scss";
+.ref{
+    background-color: $color2;
+    padding: 20px;
+    width: 100%;
+
+    display: grid;
+    
+    grid-template: 1fr 1fr 1fr / 1fr;
+    //gap: 10px;
+    &__item {
+        
+        display: grid;
+        grid-template: auto auto / 1fr;
+        gap: 20px;
+    }
+    .ref-item__body {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr;
+        gap: 20px;
+    }
+    &__btn {
+        justify-self: center;
+        width: 50%;
+    }
+}

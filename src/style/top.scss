@@ -1,0 +1,55 @@
+@import "color.scss";
+.top {
+    background-color: $color3;
+    .history-head {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-weight: 700;
+        //border-bottom: 5px solid $black_border;
+    }
+
+    .table {
+        text-align: center;
+        margin: 0;
+        .games-history {
+            @media (max-width: 700px) {
+                overflow-x: scroll;
+                height: 41px;
+                overflow-y: scroll;
+                height: unset;
+                max-height: 250px;
+                width: 100%;
+            }
+        }
+    }
+    .panel,
+    .head {
+        > span {
+            width: 25%;
+        }
+
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-size: 17px;
+        // border-bottom: 3px solid $black_border;
+        color: $fontColorWhite;
+        img {
+            width: 35px;
+            border-radius: 50%;
+        }
+        .infoTop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .head {
+        > span {
+            font-weight: 700;
+        }
+    }
+}
