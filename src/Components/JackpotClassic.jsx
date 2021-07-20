@@ -1,18 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Odometer from 'react-odometerjs';
 
 import "../style/jackpotclassic.scss"
-import "../style/mainBtn.scss"
+
 
 
 const ProcessBar = ({ numberOfBets }) => {
-
-
-
+    useEffect(() => {
+        
+    }, []);
     return (
         <div class="process-bar">
             <div class="process-bar__body">
-                <div class="process-bar__inner-body" style={{ width: `${100 - numberOfBets*1.25}%` }}>
+                <div class="process-bar__inner-body" style={{ width: `${100 - numberOfBets * 1.25}%` }}>
                 </div>
 
                 <div class="process-bar__info">
@@ -28,6 +28,16 @@ const ProcessBar = ({ numberOfBets }) => {
 
 
 function JackpotClassic() {
+    const [time, setTime] = useState(15)
+
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //       setTime(time=>time-1)
+    //     }, 1000);
+    //     return () => clearInterval(interval);
+    //   }, []);
+    
     return (
         <main className="jackpot">
             <div className="infoPlay">
@@ -41,7 +51,8 @@ function JackpotClassic() {
 
                     <span>или через</span>
                     <span className="time">
-                        <Odometer value={0} format="( ddd)" theme='minimal' />:<Odometer value={55} format="( ddd)" theme='minimal' />
+                        {console.log(time%60)}
+                        0<Odometer value={Math.floor(time/60)} format="( ddd)" theme='minimal' />:{time%60 < 9 ? 0 : ""}<Odometer value={time%60} format="( ddd)" theme='minimal' />
                     </span>
 
                 </div>
