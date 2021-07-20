@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Odometer from 'react-odometerjs';
+import Rulletka from './rulletka';
 
 import "../style/jackpotclassic.scss"
 
@@ -7,13 +8,13 @@ import "../style/jackpotclassic.scss"
 
 const ProcessBar = ({ numberOfBets }) => {
     useEffect(() => {
-        
+
     }, []);
     return (
         <div class="process-bar">
             <div class="process-bar__body">
-                <div class="process-bar__inner-body" style={{ width: `${100 - numberOfBets * 1.25}%` }}>
-                </div>
+                <div class="process-bar__inner-body"
+                    style={{ right: `-${numberOfBets * 1.25}%` }} />
 
                 <div class="process-bar__info">
                     <div class="process-bar__number-of-bets">
@@ -26,18 +27,28 @@ const ProcessBar = ({ numberOfBets }) => {
     )
 }
 
-
 function JackpotClassic() {
     const [time, setTime] = useState(15)
-
-
+    const [dataUsers, setDataUsers] = useState([{
+        Id: "316283884",
+        chance: 99,
+        name: "Даниил Морозов",
+        src: "https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1",
+    },
+    {
+        Id: "31",
+        chance: 1,
+        name: "Даниил Морозов",
+        src: "https://sun1-22.userapi.com/s/v1/if1/DqQ-7PU9OphwpL7XrQL1mtXat1Grvsy4jWj1PMwLZouiE7hOGjJAvXIzwBmWjdlFdkDN97hr.jpg?size=50x0&quality=96&crop=361,253,200,200&ava=1",
+    }])
+    const [victory, setVictory] = useState({ Id: "31" })
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //       setTime(time=>time-1)
     //     }, 1000);
     //     return () => clearInterval(interval);
     //   }, []);
-    
+
     return (
         <main className="jackpot">
             <div className="infoPlay">
@@ -45,23 +56,22 @@ function JackpotClassic() {
                     <span><span className="orange">ИГРА</span> <span className="blue">#</span> 0</span>
                     <span><span className="orange">БАНК</span> <span className="blue">:</span> 0 руб</span>
                 </div>
-                <div className="infoPlay-rull">
-
-                    <ProcessBar numberOfBets={30} />
-
-                    <span>или через</span>
-                    <span className="time">
-                        {console.log(time%60)}
-                        0<Odometer value={Math.floor(time/60)} format="( ddd)" theme='minimal' />:{time%60 < 9 ? 0 : ""}<Odometer value={time%60} format="( ddd)" theme='minimal' />
-                    </span>
-
-                </div>
+                {dataUsers.length > 0
+                    ? <Rulletka dataUsers={dataUsers} victory={victory} />
+                    : <div className="infoPlay-rull">
+                        <ProcessBar numberOfBets={20} />
+                        <span>или через</span>
+                        <span className="time">
+                            {console.log(time % 60)}
+                            0<Odometer value={Math.floor(time / 60)} format="( ddd)" theme='minimal' />:{time % 60 < 9 ? 0 : ""}<Odometer value={time % 60} format="( ddd)" theme='minimal' />
+                        </span>
+                    </div>}
                 <div className="classBetsSet">
-                    <img src="	https://csgonoj.com/assets/images/comr.png"></img>
+                    <img src="img/2arr.png"></img>
                     <span>Вы внесли 0 предметов<br />Ваш шанс на победу 0%</span>
-                    <img src="	https://csgonoj.com/assets/images/comr.png"></img>
+                    <img src="img/2arr.png"></img>
                     <span>Победитель определиться когда наберется <br />100 ПРЕДМЕТОВ или пройдет 60 СЕКУНД</span>
-                    <img src="	https://csgonoj.com/assets/images/comr.png"></img>
+                    <img src="img/2arr.png"></img>
                     <a className="main-btn" href="">Поставить ставку</a>
                 </div>
             </div>

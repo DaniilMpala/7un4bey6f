@@ -27,10 +27,12 @@ function Ref() {
             <label className="ref-item__title">Реф. код</label>
             <div className="ref-item__body ref-code">
                 <input className="main-input"/>
-                <button className="ref__btn main-btn">
+                
+                <button className="ref__btn edit-btn main-btn-2">
                     <img src="img/edit_icon.svg" alt="edit" />
                 </button>
                 <button className="ref__btn main-btn">Скопировать</button>
+                
             </div>
         </div>
         <div className="table">

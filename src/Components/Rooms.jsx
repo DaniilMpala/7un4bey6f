@@ -1,39 +1,42 @@
-import { useState } from 'react'
-
+import { useState} from 'react'
+import {Link} from "react-router-dom"
 import "../style/rooms.scss"
 
 import React from 'react'
 
 const roomData = [
     {
-        name: "qwerty",
+        name: "Classic",
+        stavkaValue: 3743
+    },
+    {
+        name: "High",
         stavkaValue: 123
     },
     {
-        name: "qwerty",
+        name: "Coinflip",
         stavkaValue: 123
     },
     {
-        name: "qwerty",
-        stavkaValue: 123
-    },
-    {
-        name: "qwerty",
+        name: "undefined",
         stavkaValue: 123
     },
 ]
 
 const Room = ({name,stavkaValue}) => {
     return (
-        <div class="room">
-            <div className="room__grid">
-                <div className="room__icon"><img src={`img/${name}.png`} /></div>
-                <div className="room__title">{name}</div>
-                <div className="room__stavka">
+        <Link to="/" class="room">
+            <div class="room__grid">
+                <div class="room__icon">
+                    <img src={`img/${name}.svg`} />
+                    
+                </div>
+                <div class="room__title">{name}</div>
+                <div class="room__stavka">
                     на кону: <span>{stavkaValue}</span>
                 </div>
             </div>            
-        </div>
+        </Link>
     )
 }
 
@@ -45,11 +48,21 @@ function Rooms() {
     let roomsElements = roomData.map( ({name, stavkaValue}) => <Room name={name} stavkaValue={stavkaValue}/>)
 
     return <div class="rooms">
-        <div className="rooms__grid">
-            <img class="rooms__game-icon" src="img/ttf.svg"/>
-            <img class="rooms__game-icon" src="img/rust_icon.svg"/>
+        <div class="rooms__grid">
+            <button class="rooms__game-icon ttf">
+                <img  src="img/ttf.svg"/>
+            </button>
+            <button class="rooms__game-icon rust">
+                <img  src="img/rust_icon.svg"/>
+            </button>
             
-            {roomsElements}
+            
+            
+            <div className="rooms__row">
+                {roomsElements}
+            </div>
+            
+                
         </div>
         
     </div>
