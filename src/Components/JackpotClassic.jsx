@@ -29,19 +29,8 @@ const ProcessBar = ({ numberOfBets }) => {
 
 function JackpotClassic() {
     const [time, setTime] = useState(15)
-    const [dataUsers, setDataUsers] = useState([{
-        Id: "316283884",
-        chance: 99,
-        name: "Даниил Морозов",
-        src: "https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1",
-    },
-    {
-        Id: "31",
-        chance: 1,
-        name: "Даниил Морозов",
-        src: "https://sun1-22.userapi.com/s/v1/if1/DqQ-7PU9OphwpL7XrQL1mtXat1Grvsy4jWj1PMwLZouiE7hOGjJAvXIzwBmWjdlFdkDN97hr.jpg?size=50x0&quality=96&crop=361,253,200,200&ava=1",
-    }])
-    const [victory, setVictory] = useState({ Id: "31" })
+    const [dataUsers, setDataUsers] = useState([])
+    const [victory, setVictory] = useState({ Id: "31",tickets: "1234", Alltickets: "123456", src: 'https://sun1-22.userapi.com/s/v1/if1/DqQ-7PU9OphwpL7XrQL1mtXat1Grvsy4jWj1PMwLZouiE7hOGjJAvXIzwBmWjdlFdkDN97hr.jpg?size=50x0&quality=96&crop=361,253,200,200&ava=1', name: "fbgbtg gtgtg", chance: "50%", summaWin: "124.2" })
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //       setTime(time=>time-1)
@@ -68,7 +57,18 @@ function JackpotClassic() {
                     </div>}
                 <div className="classBetsSet">
                     <img src="img/2arr.png"></img>
-                    <span>Вы внесли 0 предметов<br />Ваш шанс на победу 0%</span>
+                    <span onClick={()=>{setDataUsers([{
+        Id: "316283884",
+        chance: 99,
+        name: "Даниил Морозов",
+        src: "https://sun1-91.userapi.com/s/v1/ig1/iOkuSHYu5gOdsMa45_Qjun5fLsKNI0FsFhaBAX4N5rhU_OgfgbgoDXmDx5gAJ24C8xVUPHlW.jpg?size=50x0&quality=96&crop=0,0,1024,1024&ava=1",
+    },
+    {
+        Id: "31",
+        chance: 1,
+        name: "Даниил Морозов",
+        src: "https://sun1-22.userapi.com/s/v1/if1/DqQ-7PU9OphwpL7XrQL1mtXat1Grvsy4jWj1PMwLZouiE7hOGjJAvXIzwBmWjdlFdkDN97hr.jpg?size=50x0&quality=96&crop=361,253,200,200&ava=1",
+    }])}}>Вы внесли 0 предметов<br />Ваш шанс на победу 0%</span>
                     <img src="img/2arr.png"></img>
                     <span>Победитель определиться когда наберется <br />100 ПРЕДМЕТОВ или пройдет 60 СЕКУНД</span>
                     <img src="img/2arr.png"></img>

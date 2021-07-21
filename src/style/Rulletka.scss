@@ -57,6 +57,9 @@ button:focus {
             background-color: RGB(14 18 25/11%);
             padding: 2px;
             border-radius: 5px;
+            &:last-child {
+                display: none;
+            }
         }
     }
 
@@ -89,48 +92,39 @@ button:focus {
         filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
     }
     .winner {
+        padding: 0 30px;
         display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        .profile {
-            width: 75%;
+        justify-content: space-between;
+        font-size: 13pt;
+        .infoWin {
             display: flex;
-            align-items: center;
-            img {
-                width: 50px;
-                height: 50px;
-                border: 2px solid #fff;
-                border-radius: 5px;
-                margin-right: 10px;
-            }
-            .info {
-                span {
-                    display: block;
-                    margin-right: 10px;
-                    &.desc {
-                        font-size: 13px;
-                        color: #b1b8c9;
-                    }
-                    &.name {
-                        font-weight: 500;
-                    }
-                    &.chance {
-                        font-weight: 400;
-                        font-size: 14px;
+            flex-direction: column;
+            &:last-child{
+                align-items: center;
+                >span{
+                    &:last-child{
+                        font-size: 44pt;
                     }
                 }
             }
-        }
-        .bet-info {
-            width: 25%;
-            text-align: right;
-            color: $fontColorWhite;
-            img {
-                width: 20px;
-                margin-left: 5px;
-                margin-right: 5px;
-                vertical-align: text-top;
+            .winTick {
+                font-weight: 600;
+                margin: 0 10px;
+                color: $colorButtonAcc;
+            }
+            .NameWin{
+                font-weight: 600;
+                margin-right: 10px;
+            }
+            > span {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                > img {
+                    width: 35px;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
             }
         }
     }
