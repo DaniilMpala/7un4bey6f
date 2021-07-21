@@ -18,6 +18,7 @@ import History from './Components/History'
 import Ref from './Components/Ref'
 import MyHistory from './Components/myHistory'
 import Setting from './Components/Setting'
+import Support from './Components/Support';
 
 // import Chat from './Components/Chat'
 
@@ -29,42 +30,43 @@ function Index() {
             <div id="body" className={lock}>
                 <div id="inner-body">
 
-                {/* <button onClick={this.Notification.bind(this, undefined)} ref={this.notification} className="notification">
+                    {/* <button onClick={this.Notification.bind(this, undefined)} ref={this.notification} className="notification">
                     <span ref={this.notificationText} className="notification__text"></span>
                 </button> */}
 
-                <Header />
-                <Rooms />
+                    <Header />
+                    <Rooms />
 
-                <div className="main-block">
-                    
-                    <Switch>
-                        {/* <Route path="/Refferal" component={() => (<Refferal notification={this.Notification} isAuth={this.state.isAuth} />)} />
+                    <div className="main-block">
+
+                        <Switch>
+                            {/* <Route path="/Refferal" component={() => (<Refferal notification={this.Notification} isAuth={this.state.isAuth} />)} />
                             <Route path="/Support" component={() => (<Support notification={this.Notification} isAuth={this.state.isAuth} />)} /> */}
 
-                        {/* <Route path="/Terms" component={Terms} />
+                            {/* <Route path="/Terms" component={Terms} />
                             <Route path="/Policy" component={Policy} /> */}
 
-                        {/* <Route path="/Admin" component={() => (<Admin notification={this.Notification} connected={this.state.connected} isAuth={this.state.isAuth} socket={socket} />)} /> */}
+                            {/* <Route path="/Admin" component={() => (<Admin notification={this.Notification} connected={this.state.connected} isAuth={this.state.isAuth} socket={socket} />)} /> */}
 
-                        <Route path="/" exact component={() => (<JackpotClassic />)} />
-                        <Route path="/top" exact component={() => (<Top />)} />
-                        <Route path="/history" exact component={() => (<History />)} />
-                        <Route path="/ref" exact component={() => (<Ref />)} />
-                        <Route path="/myhistory" exact component={() => (<MyHistory />)} />
-                        <Route path="/setting" exact component={() => (<Setting />)} />
-                        
-                        {/* <Route path="/Withdraw" component={() => (<Withdraw notification={this.Notification} isAuth={this.state.isAuth} />)} />
+                            <Route path="/" exact component={() => (<JackpotClassic />)} />
+                            <Route path="/top" exact component={() => (<Top />)} />
+                            <Route path="/history" exact component={() => (<History />)} />
+                            <Route path="/ref" exact component={() => (<Ref />)} />
+                            <Route path="/myhistory" exact component={() => (<MyHistory />)} />
+                            <Route path="/support" exact component={() => (<Support />)} />
+                            <Route path="/setting" exact component={() => (<Setting />)} />
+
+                            {/* <Route path="/Withdraw" component={() => (<Withdraw notification={this.Notification} isAuth={this.state.isAuth} />)} />
                             <Route path="/Pay" component={() => (<Pay notification={this.Notification} isAuth={this.state.isAuth} />)} /> */}
-                    </Switch>
+                        </Switch>
 
-                    {/* <Chat notification={this.Notification} connected={this.state.connected} isAuth={this.state.isAuth} socket={socket} /> */}
+                        {/* <Chat notification={this.Notification} connected={this.state.connected} isAuth={this.state.isAuth} socket={socket} /> */}
+                    </div>
+
                 </div>
 
-                </div>
 
 
-                
             </div>
         </Router>
     );
