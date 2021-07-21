@@ -13,6 +13,7 @@ import Header from './Components/Header'
 import Rooms from './Components/Rooms'
 
 import JackpotClassic from './Components/JackpotClassic'
+import JackpotHigh from './Components/JackpotHigh'
 import Top from './Components/Top'
 import History from './Components/History'
 import Ref from './Components/Ref'
@@ -24,6 +25,7 @@ import Support from './Components/Support';
 
 function Index() {
     const [lock, setLock] = useState("container");
+    const [active, setActive] = useState("");
 
     return (
         <Router>
@@ -35,7 +37,7 @@ function Index() {
                 </button> */}
 
                     <Header />
-                    <Rooms />
+                    <Rooms setActive={setActive} active={active} />
 
                     <div className="main-block">
 
@@ -48,7 +50,11 @@ function Index() {
 
                             {/* <Route path="/Admin" component={() => (<Admin notification={this.Notification} connected={this.state.connected} isAuth={this.state.isAuth} socket={socket} />)} /> */}
 
-                            <Route path="/" exact component={() => (<JackpotClassic />)} />
+                            <Route path="/" exact component={() => (<JackpotClassic type={'tf2'} />)} />
+                            <Route path="/rust" exact component={() => (<JackpotClassic type={'rust'} />)} />
+                            <Route path="/jackpothigh" exact component={() => (<JackpotHigh type={'tf2'} />)} />
+                            <Route path="/rust/jackpothigh" exact component={() => (<JackpotHigh type={'rust'} />)} />
+
                             <Route path="/top" exact component={() => (<Top />)} />
                             <Route path="/history" exact component={() => (<History />)} />
                             <Route path="/ref" exact component={() => (<Ref />)} />

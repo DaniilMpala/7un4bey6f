@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Odometer from 'react-odometerjs';
 import Rulletka from './rulletka';
 
-import "../style/jackpotclassic.scss"
+import "../style/jackpothigh.scss"
 
 
 
@@ -72,7 +72,7 @@ function JackpotClassic({type}) {
                         }])
                     }}>Вы внесли 0 предметов<br />Ваш шанс на победу 0%</span>
                     <img src={`${process.env.PUBLIC_URL}/img/2arr.png`}></img>
-                    <span><span className="minBet">Минимальная ставка 0.2$</span>, максимум предметов 15.<br />Чем выше ставка, тем больше шанс победить. </span>
+                    <span><span className="minBet">Минимальная ставка 1.6$</span>, максимум предметов 15.<br />Чем выше ставка, тем больше шанс победить. </span>
                     <img src={`${process.env.PUBLIC_URL}/img/2arr.png`}></img>
                     <a className="main-btn" href="">Поставить ставку</a>
                 </div>
