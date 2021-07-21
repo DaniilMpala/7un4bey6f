@@ -78,6 +78,8 @@
     &__header {
         background-color: $color3;
         padding: 14px 24px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.63);
+        z-index: 100;
 
         display: flex;
         justify-content: center;
@@ -100,7 +102,11 @@
         display: flex;
         align-items: center;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 23px;
+        color: #ff7423e3;
+        //filter: drop-shadow(0px 0px 2px $blue);
+        //text-transform: uppercase;
+        padding: 5px 0;
     }
 
     &__close {
@@ -208,7 +214,7 @@
     }
 
     .item__msg {
-        background-color: $color3;
+        background-color: $color4;
         font-size: 13px;
     }
 }
@@ -220,14 +226,13 @@
     right: 0;
 
     display: grid;
-    grid-template-columns: 9fr 1fr 1fr;
+    grid-template-columns: 1fr 12fr 1fr;
 
     //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.63);
 
     &__text {
         resize: none;
     }
-
     &__attach-photo {
         width: 0.1px;
         height: 0.1px;
@@ -235,15 +240,23 @@
         overflow: hidden;
         position: absolute;
         z-index: -1;
-        //& svg {
-        //    height: 30px;
-        //    fill: rgb(255, 255, 255);
-        //}
     }
 
     &__attach-photo-icon {
+        transition: 0.2s;
+        &:hover {
+            opacity: 0.7;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+        position: relative;
         & img {
-            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 30px;
             border-radius: 2px;
         }
     }
@@ -255,10 +268,12 @@
 
     &__btn {
         text-align: center;
+        padding: 0px;
+        opacity: 1;
+        background-color: $color5;
 
         & img {
-            height: 15px;
-            transform: translate(10%, 0);
+            height: 30px;
         }
     }
 }

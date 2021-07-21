@@ -1,8 +1,9 @@
 @import "color.scss";
 @import "default-styles.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "../style/mainInput.scss";
 @import "../style/mainBtn.scss";
+@import "../style/mainBtn_v2.scss";
 @import "../style/mainBtn2.scss";
 @import "../style/table.scss";
 
@@ -10,11 +11,10 @@ body {
     // background-image: url(../img/rull_wall_fin.png); /* Путь к фоновому рисунку */
     //background-position: left bottom; /* Положение фона */
     //background-repeat: repeat;
-    
-    
+
     //overflow-y: scroll;
     overflow-x: unset;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     //font-weight: 600;
 
     color: $fontColorWhite;
@@ -25,7 +25,6 @@ body {
     background-image: linear-gradient(to top, #132633 0%, #6a8da7 110%);
     background-size: cover;
     height: 100%;
-    
 }
 #body {
     display: flex;
@@ -33,7 +32,6 @@ body {
     justify-content: flex-start;
     height: 100%;
     //overflow-x: hidden;
-    
 }
 .main-block {
     // @media (min-width: 1700px) and (max-width: 1900px) {
@@ -47,14 +45,11 @@ body {
     // }
 }
 .container {
-    
     //position: relative;
 
     @media (min-width: 1400px) {
         max-width: 1120px;
     }
-
-
 
     padding-right: 0;
     padding-left: 0;
@@ -65,5 +60,5 @@ body {
 }
 
 #inner-body {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

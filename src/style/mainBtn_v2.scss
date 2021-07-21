@@ -1,10 +1,10 @@
 @import "color.scss";
 
-.main-btn {
-    background-image: linear-gradient(to right, #ff522f 0%, #f09819 51%, #ff512f 100%);
+.main-btn-v2 {
+    background-image: linear-gradient(to right, #f09819 0%, #ff522f 0%, #f09819 100%);
 
     //margin: 10px;
-    padding: 15px 45px;
+    //padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -15,6 +15,8 @@
     border-radius: 2px;
     display: block;
     opacity: 1;
+    height: 100%;
+    width: 100%;
 
     &:hover {
         background-position: right center;
