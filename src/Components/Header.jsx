@@ -2,8 +2,7 @@ import { useState } from 'react'
 import { Link } from "react-router-dom"
 import "../style/header.scss"
 
-function Header() {
-
+function Header({setActive}) {
     return <header>
         <div class="head-nav">
             <div>
@@ -11,10 +10,10 @@ function Header() {
             </div>
 
             <div class="nav">
-                <Link class="nav__item" to="/">Играть</Link>
-                <Link class="nav__item" to="/top">Топ игроков</Link>
-                <Link class="nav__item" to="/history">История игр</Link>
-                <Link class="nav__item " to="/ref">Реферальная система</Link>
+                <Link onClick={()=>{setActive('/')}} class="nav__item" to="/">Играть</Link>
+                <Link onClick={()=>{setActive('/top')}} class="nav__item" to="/top">Топ игроков</Link>
+                <Link onClick={()=>{setActive('/history')}} class="nav__item" to="/history">История игр</Link>
+                <Link onClick={()=>{setActive('/ref')}} class="nav__item " to="/ref">Реферальная система</Link>
             </div>
         </div>
 
@@ -42,9 +41,9 @@ function Header() {
                     <span  class="nav-info-profile__name" >Никнейм</span>
                     <a class="nav-info-profile__link logout" href="/logout">Выйти</a>
                     
-                    <Link class="nav-info-profile__link" to="/myhistory">Мои игры</Link>
-                    <Link class="nav-info-profile__link" to="/support">Тех. поддержка</Link>
-                    <Link class="nav-info-profile__link" to="/setting">Настройка</Link>
+                    <Link onClick={()=>{setActive('/myhistory')}} class="nav-info-profile__link" to="/myhistory">Мои игры</Link>
+                    <Link onClick={()=>{setActive('/support')}} class="nav-info-profile__link" to="/support">Тех. поддержка</Link>
+                    <Link onClick={()=>{setActive('/setting')}} class="nav-info-profile__link" to="/setting">Настройка</Link>
                 </div>
             </div>
         </div>

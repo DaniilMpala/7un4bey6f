@@ -25,7 +25,7 @@ import Support from './Components/Support';
 
 function Index() {
     const [lock, setLock] = useState("container");
-    const [active, setActive] = useState("");
+    const [active, setActive] = useState(location.pathname);
 
     return (
         <Router>
@@ -36,7 +36,7 @@ function Index() {
                     <span ref={this.notificationText} className="notification__text"></span>
                 </button> */}
 
-                    <Header />
+                    <Header setActive={setActive} />
                     <Rooms setActive={setActive} active={active} />
 
                     <div className="main-block">

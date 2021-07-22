@@ -5,9 +5,9 @@ import "../style/setting.scss"
 function Setting() {
 
     return <div className="setting">
-            <div>
-                <input placeholder="Введите ссылку на обмен" />
-                <button>Изменить</button>
+            <div className="main-input">
+                <input className="main-input" placeholder="Введите ссылку на обмен" />
+                <button className="main-btn">Изменить</button>
             </div>
     </div>
 }

@@ -7,9 +7,9 @@ import React from 'react'
 
 const Room = ({room, setActive, active}) => {
     var { name, stavkaValue, url } = room
-    console.log(name.toLowerCase(), active)
+    console.log(active, url)
     return (
-        <Link to={url} onClick={()=>{setActive(url)}} className={~active.indexOf(name.toLowerCase()) ? "room active" : "room"}>
+        <Link to={url} onClick={()=>{setActive(url)}} className={url.toLowerCase() == active ? "room active" : "room"}>
             <div class="room__grid">
                 <div class="room__icon">
                     <img src={`${process.env.PUBLIC_URL}/img/${name}.svg`} />
@@ -32,29 +32,30 @@ function Rooms({setActive, active}) {
         {
             name: "Classic",
             stavkaValue: 3743,
-            url: "/"
+            url: ~active.indexOf("rust") ? "/rust/" : "/"
         },
         {
             name: "High",
             stavkaValue: 123,
-            url: "/jackpothigh"
+            url: ~active.indexOf("rust") ? "/rust/jackpothigh" : "/jackpothigh"
         },
         {
             name: "Coinflip",
             stavkaValue: 123,
-            url: "/"
+            url: ~active.indexOf("rust") ? "/rust/coinflip" : "/coinflip"
         },
         {
             name: "undefined",
             stavkaValue: 123,
-            url: "/"
+            url: ~active.indexOf("rust") ? "/rust/undefined" : "/undefined"
         },
     ])
 
-    console.log(roomData)
+
     let roomsElements = roomData.map((room) => <Room setActive={setActive} room={room} active={active} />)
 
     useEffect(() => { }, [])
+    
     return <div class="rooms">
         <div class="rooms__grid">
             <button onClick={() => { setRoom(roomData.map((v) => { v.url = v.url.replace("/rust", ""); return v })) }} class="rooms__game-icon ttf">
