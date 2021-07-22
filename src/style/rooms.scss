@@ -1,5 +1,5 @@
 @import "color.scss";
-///////////
+////////dsfsdf
 .room {
     flex: 1 1 auto;
 
@@ -43,22 +43,49 @@
 
 .rooms {
     &__grid {
-        padding: 0 0 0 20px;
-
         display: grid;
-        grid-template: 55px 55px / auto 1fr;
-        column-gap: 20px;
-        row-gap: 10px;
+        grid-template: 1fr 1fr / auto 1fr;
+        //column-gap: 20px;
+        //row-gap: 10px;
         grid-template-areas:
             "ttf rooms"
             "rust rooms";
     }
 
     &__game-icon {
+        padding: 10px;
+        overflow: hidden;
+        //border: 5px solid $color2;
+        //border-bottom: 0;
+
+        transition: 0.2s;
         & img {
             height: 40px;
+            filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.4));
+
+            transition: 0.2s;
+        }
+        &:hover {
+            //filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
+
+            & img {
+                filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.5));
+                transform: translate(0, -3px);
+            }
+        }
+        &:active {
+            & img {
+                opacity: 0.6;
+                filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.4));
+                transform: translate(0, 0);
+            }
         }
     }
+
+    .active-mode {
+        background: $color3;
+    }
+
     &__row {
         //height: 110%;
         grid-area: rooms;

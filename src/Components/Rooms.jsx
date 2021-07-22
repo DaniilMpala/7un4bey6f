@@ -5,11 +5,11 @@ import "../style/rooms.scss"
 import React from 'react'
 
 
-const Room = ({room, setActive, active}) => {
+const Room = ({ room, setActive, active }) => {
     var { name, stavkaValue, url } = room
     console.log(active, url)
     return (
-        <Link to={url} onClick={()=>{setActive(url)}} className={url.toLowerCase() == active ? "room active" : "room"}>
+        <Link to={url} onClick={() => { setActive(url) }} className={url.toLowerCase() == active ? "room active" : "room"}>
             <div class="room__grid">
                 <div class="room__icon">
                     <img src={`${process.env.PUBLIC_URL}/img/${name}.svg`} />
@@ -26,7 +26,7 @@ const Room = ({room, setActive, active}) => {
 
 
 
-function Rooms({setActive, active}) {
+function Rooms({ setActive, active }) {
 
     const [roomData, setRoom] = useState([
         {
@@ -55,10 +55,10 @@ function Rooms({setActive, active}) {
     let roomsElements = roomData.map((room) => <Room setActive={setActive} room={room} active={active} />)
 
     useEffect(() => { }, [])
-    
+
     return <div class="rooms">
         <div class="rooms__grid">
-            <button onClick={() => { setRoom(roomData.map((v) => { v.url = v.url.replace("/rust", ""); return v })) }} class="rooms__game-icon ttf">
+            <button onClick={() => { setRoom(roomData.map((v) => { v.url = v.url.replace("/rust", ""); return v })) }} class="rooms__game-icon ttf active-mode">
                 <img src={process.env.PUBLIC_URL + "/img/ttf.svg"} />
             </button>
             <button onClick={() => { setRoom(roomData.map((v) => { v.url = "/rust" + v.url.replace("/rust", ""); return v })) }} class="rooms__game-icon rust">

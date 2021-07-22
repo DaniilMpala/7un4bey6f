@@ -24,53 +24,12 @@
 }
 
 .support-chat {
-    @media (max-width: 1400px) {
-        display: none;
-
-        position: absolute;
-        z-index: 2000;
-        margin: 0;
-        left: 50%;
-
-        top: 15%;
-
-        bottom: 30px;
-        right: 30px;
-        width: auto;
-        max-width: none;
-        max-height: none;
-        .support-chat__close {
-            display: block;
-        }
-
-        .support-chat__messages {
-            padding: 12px 12px 50px 12px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        display: none;
-
-        position: absolute;
-        z-index: 2000;
-        margin: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        max-width: none;
-        max-height: none;
-        .support-chat__close {
-            display: block;
-        }
-    }
-
     position: relative;
 
     width: 100%;
     overflow: hidden;
 
-    //background-color: $color4;
+    background-color: $color4;
     color: $fontColorWhite;
     height: 600px;
     display: flex;
@@ -83,18 +42,6 @@
 
         display: flex;
         justify-content: center;
-    }
-
-    @keyframes indic {
-        from {
-            opacity: 0;
-        }
-        50% {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
     }
 
     &__title {
@@ -214,8 +161,8 @@
     }
 
     .item__msg {
-        background-color: $color4;
-        font-size: 13px;
+        background-color: $borderBottom;
+        //font-size: 13px;
     }
 }
 
