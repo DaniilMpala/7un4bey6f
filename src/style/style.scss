@@ -22,7 +22,7 @@ body {
 }
 #root {
     overflow-x: hidden;
-    background-image: linear-gradient(to top, #132633 0%, #6a8da7 110%);
+    background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(23,83,164,1) 64%, rgba(0,111,153,1) 100%);;
     background-size: cover;
     height: 100%;
 }
@@ -60,5 +60,7 @@ body {
 }
 
 #inner-body {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px RGB(0 0 0 / 51%);
+    margin-top: 10px;
+    border-radius: 5px;
 }

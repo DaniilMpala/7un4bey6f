@@ -27,7 +27,8 @@ const Room = ({ room, setActive, active }) => {
 
 
 function Rooms({ setActive, active }) {
-
+    const [tf2, settf2] = useState(~active.indexOf('rust') ? '' : 'active-mode')
+    const [rust, setrust] = useState(!~active.indexOf('rust') ? '' : 'active-mode')
     const [roomData, setRoom] = useState([
         {
             name: "Classic",
@@ -45,9 +46,9 @@ function Rooms({ setActive, active }) {
             url: ~active.indexOf("rust") ? "/rust/coinflip" : "/coinflip"
         },
         {
-            name: "undefined",
+            name: "FastGame",
             stavkaValue: 123,
-            url: ~active.indexOf("rust") ? "/rust/undefined" : "/undefined"
+            url: ~active.indexOf("rust") ? "/rust/fastgame" : "/fastgame"
         },
     ])
 
@@ -58,10 +59,10 @@ function Rooms({ setActive, active }) {
 
     return <div class="rooms">
         <div class="rooms__grid">
-            <button onClick={() => { setRoom(roomData.map((v) => { v.url = v.url.replace("/rust", ""); return v })) }} class="rooms__game-icon ttf active-mode">
+            <button onClick={() => { setRoom(roomData.map((v) => { v.url = v.url.replace("/rust", ""); settf2('active-mode');setrust(''); return v })) }} class={`rooms__game-icon ttf ${tf2}`}>
                 <img src={process.env.PUBLIC_URL + "/img/ttf.svg"} />
             </button>
-            <button onClick={() => { setRoom(roomData.map((v) => { v.url = "/rust" + v.url.replace("/rust", ""); return v })) }} class="rooms__game-icon rust">
+            <button onClick={() => { setRoom(roomData.map((v) => { v.url = "/rust" + v.url.replace("/rust", "");setrust('active-mode');settf2(''); return v })) }} class={`rooms__game-icon rust ${rust}`}>
                 <img src={process.env.PUBLIC_URL + "/img/rust_icon.svg"} />
             </button>
 

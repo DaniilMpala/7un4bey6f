@@ -20,6 +20,7 @@ import Ref from './Components/Ref'
 import MyHistory from './Components/myHistory'
 import Setting from './Components/Setting'
 import Support from './Components/Support';
+import Coinflip from './Components/Coinflip';
 
 // import Chat from './Components/Chat'
 
@@ -52,8 +53,12 @@ function Index() {
 
                             <Route path="/" exact component={() => (<JackpotClassic type={'tf2'} />)} />
                             <Route path="/rust" exact component={() => (<JackpotClassic type={'rust'} />)} />
+
                             <Route path="/jackpothigh" exact component={() => (<JackpotHigh type={'tf2'} />)} />
                             <Route path="/rust/jackpothigh" exact component={() => (<JackpotHigh type={'rust'} />)} />
+
+                            <Route path="/coinflip" exact component={() => (<Coinflip type={'tf2'} />)} />
+                            <Route path="/rust/coinflip" exact component={() => (<Coinflip type={'rust'} />)} />
 
                             <Route path="/top" exact component={() => (<Top />)} />
                             <Route path="/history" exact component={() => (<History />)} />
@@ -61,6 +66,7 @@ function Index() {
                             <Route path="/myhistory" exact component={() => (<MyHistory />)} />
                             <Route path="/support" exact component={() => (<Support />)} />
                             <Route path="/setting" exact component={() => (<Setting />)} />
+
 
                             {/* <Route path="/Withdraw" component={() => (<Withdraw notification={this.Notification} isAuth={this.state.isAuth} />)} />
                             <Route path="/Pay" component={() => (<Pay notification={this.Notification} isAuth={this.state.isAuth} />)} /> */}

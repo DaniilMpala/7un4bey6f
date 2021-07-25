@@ -1,12 +1,13 @@
 @import "color.scss";
 header {
     position: relative;
-    background-color: $color3;
+    background-color: $color2;
+    border-radius: 5px 5px 0 0 ;
     //box-shadow: 0 6px 4px $green;
     //border-bottom: 3px solid $black_border;
 
     padding: 0 20px;
-    z-index: 1600;
+    z-index: 1;
     color: $fontColorWhite_trns;
     
 

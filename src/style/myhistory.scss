@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-between;
         &:nth-of-type(odd) {
-            background: $color4;
+            background: $color2;
         }
         .winTick {
             color: $colorButtonAcc;

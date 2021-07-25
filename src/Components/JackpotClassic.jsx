@@ -39,7 +39,7 @@ function JackpotClassic({type}) {
     //   }, []);
 
     return (
-        <main className="jackpot">
+        <main className="jackpotclassic">
             <div className="infoPlay">
                 <div className="infoPlay-Info">
                     <span><span className="orange">ИГРА</span> <span className="blue">#</span> 0</span>
