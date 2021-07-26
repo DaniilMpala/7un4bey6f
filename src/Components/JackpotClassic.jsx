@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Odometer from 'react-odometerjs';
 import Rulletka from './rulletka';
 
-import "../style/jackpotclassic.scss"
+import "../style/jackpot.scss"
 
 
 
@@ -27,7 +27,7 @@ const ProcessBar = ({ numberOfBets }) => {
     )
 }
 
-function JackpotClassic({type}) {
+function JackpotClassic({ type }) {
     const [time, setTime] = useState(15)
     const [dataUsers, setDataUsers] = useState([])
     const [victory, setVictory] = useState({ Id: "31", tickets: "1234", Alltickets: "123456", src: 'https://sun1-22.userapi.com/s/v1/if1/DqQ-7PU9OphwpL7XrQL1mtXat1Grvsy4jWj1PMwLZouiE7hOGjJAvXIzwBmWjdlFdkDN97hr.jpg?size=50x0&quality=96&crop=361,253,200,200&ava=1', name: "fbgbtg gtgtg", chance: "50%", summaWin: "124.2" })
@@ -39,7 +39,7 @@ function JackpotClassic({type}) {
     //   }, []);
 
     return (
-        <main className="jackpotclassic">
+        <main className="jackpot">
             <div className="infoPlay">
                 <div className="infoPlay-Info">
                     <span><span className="orange">ИГРА</span> <span className="blue">#</span> 0</span>
