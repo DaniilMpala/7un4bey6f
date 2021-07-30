@@ -19,6 +19,104 @@
             font-size: 12pt;
         }
     }
+    #exampleModalLabel {
+        font-size: 15pt;
+    }
+    .cf-inventory {
+        padding: 20px;
+    }
+    .allitem {
+        margin-top: 10px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            background-color: #0000002e;
+            border-radius: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+            > span {
+                font-size: 10pt;
+                text-align: center;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                line-height: normal;
+                background-color: #00000030;
+                border-radius: 0 0 5px 5px;
+            }
+            .title {
+                border-radius: 5px 5px 0 0;
+            }
+        }
+    }
+    .table {
+        background-color: $color2;
+        .head {
+            height: 50px;
+        }
+        .panel {
+            height: 70px;
+            border-top: 1px solid rgba(223, 223, 223, 0.289);
+        }
+        .itemBet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .item {
+                background-color: $backcolorBet;
+                margin-right: 10px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 6px;
+                img {
+                    width: 65px;
+                }
+                span {
+                    background-color: #1e2831;
+                    text-align: center;
+                    border-radius: 0 0 6px 6px;
+                    font-size: 10pt;
+                    padding: 3px;
+                    width: 100%;
+                }
+            }
+        }
+
+        span:nth-child(4) {
+            width: 25%;
+        }
+        span:nth-child(5) {
+            width: 40%;
+            position: relative;
+            img:first-child {
+                position: absolute;
+                left: 35%;
+                bottom: 0px;
+                z-index: 1;
+                width: 17px;
+            }
+        }
+        span:nth-child(2) {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 40px;
+                margin: 0px 7px;
+            }
+        }
+        span:first-child {
+            width: 33%;
+        }
+        span:last-child {
+            width: 33%;
+        }
+        span {
+            padding: 0;
+        }
+    }
     .modal-content {
         background-color: $color3;
     }
@@ -27,6 +125,48 @@
     }
     .modal-footer {
         border-top: 1px solid $fontColorWhite_trns_2;
+    }
+    .windowWinners {
+        display: flex;
+        justify-content: space-evenly;
+        
+        .Win {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            img {
+                width: 100px;
+            }
+            span {
+                width: auto;
+                display: block;
+                font-size: 16px;
+                line-height: 30px;
+            }
+            span:last-child {
+                width: auto;
+                display: block;
+                font-size: 12px;
+                line-height: 30px;
+            }
+        }
+    }
+    .items{
+        display: flex;
+        justify-content: space-around;
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            padding: 10px;
+            background-color: #00000021;
+            border-radius: 5px 5px 0px 0px;
+            span{
+                margin: 0 10px;
+            }
+        }
     }
     .close {
         background-color: #353535;
