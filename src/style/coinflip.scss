@@ -39,7 +39,8 @@
     }
     .sides {
         .left-side {
-            background: url(https://play.d2d-roulette.com/img/cf-left-big.png) no-repeat 50%;
+            background: url(https://play.d2d-roulette.com/img/cf-left-big.png)
+                no-repeat 50%;
             display: block;
             width: 40px;
             height: 40px;
@@ -53,7 +54,8 @@
             cursor: pointer;
         }
         .right-side {
-            background: url(https://play.d2d-roulette.com/img/cf-right-big.png) no-repeat 50%;
+            background: url(https://play.d2d-roulette.com/img/cf-right-big.png)
+                no-repeat 50%;
             display: block;
             width: 40px;
             height: 40px;
@@ -81,5 +83,99 @@
             max-width: 800px;
             margin: 1.75rem auto;
         }
+    }
+}
+
+.coin {
+    background-color: $color2;
+    &__container {
+        height: 100px;
+        display: flex;
+        //flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__body {
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+    &__back-container {
+    }
+    &__front-container {
+    }
+
+    &__back-container,
+    &__front-container {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__back,
+    &__front {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        filter: drop-shadow(0 0 15px rgba(134, 121, 0, 0.473));
+    }
+    &__back {
+        background-color: #f6e444;
+        border-radius: 50%;
+    }
+    &__front {
+        background-color: #f6e444;
+        border-radius: 50%;
+        background-image: url(Coinflip.svg);
+        background-size: cover;
+    }
+}
+
+@keyframes back-rotation {
+    from {
+        transform: rotateX(180deg);
+    }
+    to {
+        transform: rotateX(540deg);
+    }
+}
+@keyframes front-rotation {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes rail {
+    from {
+        //transform: translate(0, 0px);
+        transform: scale(100%);
+    }
+    to {
+        //transform: translate(0, -150px);
+        transform: scale(200%);
+    }
+}
+
+.start {
+    .coin__body {
+        animation: rail 1s cubic-bezier(0.15, 0.62, 0.37, 1) 2;
+        animation-direction: alternate;
+    }
+    .coin__back {
+        border-radius: 50%;
+        animation: back-rotation 1s linear 2;
+        animation-fill-mode: forwards;
+    }
+    .coin__front {
+        border-radius: 50%;
+        animation: front-rotation 1s linear 2;
+        animation-fill-mode: forwards;
     }
 }
