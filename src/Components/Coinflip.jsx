@@ -98,8 +98,8 @@ function Coinflip({ type }) {
                     </div>
                 </div>
             </div>
-
-            <div class="coin start">
+            {/* накидываешь либо win-first либо win-second, в зависимости от того кто выиграл */}
+            <div class="coin win-first">
                 <div className="coin__container">
                     <div className="coin__body">
                         <div className="coin__back-container">

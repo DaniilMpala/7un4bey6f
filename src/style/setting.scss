@@ -1,6 +1,10 @@
+@import "color.scss";
 .setting{
+    
     .main-input{
         display: flex;
+        background-color: $color2;
+        
     }
     input{
         width: 100%;
