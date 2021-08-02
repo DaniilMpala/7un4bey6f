@@ -1,8 +1,12 @@
 @import "color.scss";
 
 .main-btn-2 {
-    
-    background-image: linear-gradient(to right, #112533  0%, #112533  51%, #142f41 100%);
+    background-image: linear-gradient(
+        to right,
+        #112533 0%,
+        #112533 51%,
+        #142f41 100%
+    );
 
     //margin: 10px;
     padding: 15px 45px;
@@ -10,21 +14,20 @@
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;     
+    color: white;
     font-weight: 700;
-    
+
     border-radius: 2px;
     display: block;
-
+    cursor: pointer;
 
     &:hover {
-      background-position: right center; 
-      color: #fff;
-      text-decoration: none;
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
     }
     &:active {
-      background-position: right center; 
-      opacity: 0.6;
+        background-position: right center;
+        opacity: 0.6;
     }
-  
 }

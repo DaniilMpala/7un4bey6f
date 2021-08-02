@@ -1,7 +1,12 @@
 @import "color.scss";
 
 .main-btn {
-    background-image: linear-gradient(to right, #ff522f 0%, #f09819 51%, #ff512f 100%);
+    background-image: linear-gradient(
+        to right,
+        #ff522f 0%,
+        #f09819 51%,
+        #ff512f 100%
+    );
 
     //margin: 10px;
     padding: 15px 45px;
@@ -15,6 +20,7 @@
     border-radius: 2px;
     display: block;
     opacity: 1;
+    cursor: pointer;
 
     &:hover {
         background-position: right center;
