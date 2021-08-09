@@ -149,10 +149,14 @@ function Coinflip({ type }) {
     const startCoinFlip = (winner, isAnimated) => {
         switch (winner) {
             case 1:
-                CoinRef.current.classList.add(isAnimated ? "animated-first" : "win-first");
+                CoinRef.current.classList.add(
+                    isAnimated ? "animated-first" : "win-first"
+                );
                 break;
             case 2:
-                CoinRef.current.classList.add(isAnimated ? "animated-second" : "win-second");
+                CoinRef.current.classList.add(
+                    isAnimated ? "animated-second" : "win-second"
+                );
                 break;
             default:
                 break;
@@ -165,8 +169,8 @@ function Coinflip({ type }) {
             <div className="classBetsSet">
                 <img src={`${process.env.PUBLIC_URL}/img/2arr.png`}></img>
                 <span>
-                    Добро пожаловать в Coinflip.В ней вы сразитесь 1 на 1 <br /> с другим игроком
-                    при приблизительно равных на победу шансах.
+                    Добро пожаловать в Coinflip.В ней вы сразитесь 1 на 1 <br /> с другим
+                    игроком при приблизительно равных на победу шансах.
                 </span>
                 <img src={`${process.env.PUBLIC_URL}/img/2arr.png`}></img>
                 <span>
@@ -174,7 +178,11 @@ function Coinflip({ type }) {
                     <br /> максимум предметов 15.{" "}
                 </span>
                 <img src={`${process.env.PUBLIC_URL}/img/2arr.png`}></img>
-                <a className="main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a
+                    className="main-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
                     Поставить ставку
                 </a>
             </div>
@@ -199,8 +207,8 @@ function Coinflip({ type }) {
                                     <span>
                                         Минимальная ставка 0.2$,максимум предметов 15.
                                         <br />
-                                        Выберите сторону, если это необходимо и после нажмите
-                                        "Депозит" <br />
+                                        Выберите сторону, если это необходимо и после
+                                        нажмите "Депозит" <br />
                                         Вы получите обмен, который Вам нужно будет принять
                                     </span>
                                 </div>
@@ -374,8 +382,12 @@ function Coinflip({ type }) {
                                     {list[LoadItemsId].status.gamesEnd ? (
                                         <>
                                             <img src={list[LoadItemsId].player[1].src} />
-                                            <span>{list[LoadItemsId].player[1].name}</span>
-                                            <span>{list[LoadItemsId].player[1].chance}</span>
+                                            <span>
+                                                {list[LoadItemsId].player[1].name}
+                                            </span>
+                                            <span>
+                                                {list[LoadItemsId].player[1].chance}
+                                            </span>
                                         </>
                                     ) : (
                                         "Игра не началась"
@@ -398,8 +410,9 @@ function Coinflip({ type }) {
                                             $
                                         </span>
                                         <span>
-                                            {list[LoadItemsId].items.filter((v) => v.player == 0)
-                                                .length == 1
+                                            {list[LoadItemsId].items.filter(
+                                                (v) => v.player == 0
+                                            ).length == 1
                                                 ? `1 предмет`
                                                 : list[LoadItemsId].items.filter(
                                                       (v) => v.player == 0
@@ -415,7 +428,9 @@ function Coinflip({ type }) {
                                                       ).length
                                                   } предметов`}
                                         </span>
-                                        <span>Билеты: {list[LoadItemsId].player[0].ticket}</span>
+                                        <span>
+                                            Билеты: {list[LoadItemsId].player[0].ticket}
+                                        </span>
                                     </div>
                                     <div className="item">
                                         <img />
@@ -432,7 +447,8 @@ function Coinflip({ type }) {
                                                         .reduce(
                                                             (sum, cur) =>
                                                                 cur.player == 1
-                                                                    ? sum + Number(cur.price)
+                                                                    ? sum +
+                                                                      Number(cur.price)
                                                                     : sum,
                                                             0
                                                         )
@@ -448,18 +464,23 @@ function Coinflip({ type }) {
                                                               (v) => v.player == 1
                                                           ).length < 5
                                                         ? `${
-                                                              list[LoadItemsId].items.filter(
+                                                              list[
+                                                                  LoadItemsId
+                                                              ].items.filter(
                                                                   (v) => v.player == 1
                                                               ).length
                                                           } предмета`
                                                         : `${
-                                                              list[LoadItemsId].items.filter(
+                                                              list[
+                                                                  LoadItemsId
+                                                              ].items.filter(
                                                                   (v) => v.player == 1
                                                               ).length
                                                           } предметов`}
                                                 </span>
                                                 <span>
-                                                    Билеты: {list[LoadItemsId].player[1].ticket}
+                                                    Билеты:{" "}
+                                                    {list[LoadItemsId].player[1].ticket}
                                                 </span>
                                             </div>
                                             <div className="item">

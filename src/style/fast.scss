@@ -1,0 +1,187 @@
+@import "color.scss";
+.fastgame {
+    &__set {
+        display: grid;
+        grid-template: 1fr / 50px auto 50px auto 50px auto;
+        align-items: center;
+        justify-items: center;
+        background-color: $color3;
+        padding: 15px;
+
+        img {
+            margin: 9px 11px;
+            width: 25px;
+        }
+
+        > span {
+            line-height: 150%;
+            font-size: 12pt;
+        }
+    }
+    &__min-bet {
+        font-weight: 600;
+    }
+
+    &__panel {
+    }
+}
+
+$player-1: #f6e444;
+$player-2: #7fdaed;
+$player-3: #8ddd89;
+
+.fastgame-panel {
+    background-color: $color2;
+    padding: 15px;
+    font-size: 1.3rem;
+    display: grid;
+    gap: 15px;
+    grid-template: auto 1fr / 2fr 2fr 1fr 1fr;
+    &__title {
+        grid-column: span 3;
+    }
+
+    &__players {
+        grid-column: span 2;
+        display: grid;
+        grid-template: 95px / 95px 95px 95px 1fr;
+        gap: 10px;
+    }
+
+    .player-1 {
+        background-color: $player-1;
+        border-left: 4px solid $player-1;
+    }
+    .player-2 {
+        background-color: $player-2;
+        border-left: 4px solid $player-2;
+    }
+    .player-3 {
+        //border: 1px solid $player-3;
+        border-left: 4px solid $player-3;
+        background-color: $player-3;
+    }
+
+    &__player {
+        background-color: $color3;
+        border-left: 4px solid #00000000;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    &__player-ava {
+        width: 100%;
+        height: 100%;
+        background-color: $color3;
+        & img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template: repeat(3, 23px) / (30px * 10);
+        align-content: space-between;
+        justify-items: start;
+        height: 95px;
+    }
+    &__player-items {
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        background-color: $color3;
+
+        & img {
+            height: 20px;
+        }
+    }
+
+    &__chance {
+        display: grid;
+        grid-template: repeat(3, 23px) / 1fr;
+        align-content: space-between;
+    }
+
+    &__winner-block {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        display: grid;
+        align-content: space-between;
+        .player-win-1 {
+        }
+        .player-win-2 {
+        }
+        .player-win-3 {
+        }
+    }
+
+    &__winner-name {
+        align-self: center;
+        text-align: center;
+        padding: 10px;
+        color: rgb(49, 49, 49);
+        font-weight: 700;
+        border-radius: 3px;
+    }
+
+    &__winner-status {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#exampleModalLabel {
+    font-size: 15pt;
+}
+.cf-inventory {
+    padding: 20px;
+}
+.allitem {
+    margin-top: 10px;
+    .item {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        background-color: #0000002e;
+        border-radius: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
+        > span {
+            font-size: 10pt;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: normal;
+            background-color: #00000030;
+            border-radius: 0 0 5px 5px;
+        }
+        .title {
+            border-radius: 5px 5px 0 0;
+        }
+    }
+}
+.modal-content {
+    background-color: $color3;
+}
+.modal-header {
+    border-bottom: 3px solid $fontColorWhite_trns_2;
+}
+.modal-footer {
+    border-top: 3px solid $fontColorWhite_trns_2;
+}
+
+.choice {
+    & div:first-child {
+        line-height: 130%;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 3px dashed $fontColorWhite_trns_2;
+}
